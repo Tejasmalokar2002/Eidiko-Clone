@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Dark/Light Mode</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="eidiko-logo.svg" alt="Website Logo" class="logo-img">
+                </a>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links" id="nav">
+                <li class="dropdown">
+                    <a href="#">Digital Services</a>
+                    <i class="fa-solid fa-angle-down" style="color: rgb(64, 136, 243);"></i>
+                    <div class="dropdown-content">
+                        <a href="">Service and UX Design</a>
+                        <a href="">Cloud Engineering</a>
+                        <a href="">Intelligent Automation</a>
+                        <a href="">Data Analytics and AI</a>
+                        <a href="">QA Automation</a>
+                        <a href="">Application Management</a>
+                        <a href="">Enterprise Agility</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Industries</a>
+                    <i class="fa-solid fa-angle-down" style="color: rgb(64, 136, 243);"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Banking Solution</a>
+                        <a href="#">Education Solution</a>
+                        <a href="#">Healthcare Solution</a>
+                        <a href="">Solutions for Government</a>
+                        <a href="">Manufacturing</a>
+                    </div>
+                </li>
+                <li><a href="#">SAP</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Company</a>
+                    <i class="fa-solid fa-angle-down" style="color: rgb(64, 136, 243);"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Client</a>
+                        <a href="#">Careers</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- Mode Toggle Icon -->
+            <button id="mode-toggle" class="mode-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <!-- Contacts link inside a green box -->
+            <div class="contact-box">
+                <a href="#" class="contacts">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="content">
+            <h4>Eidiko - Leading digital and integration service provider</h4>
+            <h1>Partner in digital transformation.</h1>
+        </div>
+    </section>
+
+    <!-- New Section with YouTube Video Background -->
+    <section class="bg-video">
+        <div class="video-background-section">
+            <div class="video-wrapper">
+                <iframe class="background-video" src="https://www.youtube.com/embed/5YgvMrwZPrk?autoplay=1&mute=1&loop=1&playlist=5YgvMrwZPrk" title="YouTube video" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+            </div>
+            <div class="overlay-content">
+                <p>As a leading IT Service Provider, we transcend the traditional role of a mere IT service provider.
+                    We position ourselves as an integral business ally for enterprises, organizations, and the public sector. Our mission is to transform IT landscapes into future-ready powerhouses!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--About Section -->
+    <section class="about-section">
+        <h2>About</h2>
+        <p>Eidiko is a leading Digital Transformation and IBM Premier Business Partner,<br>
+            specializing in Process Management, API Management, and ESB Implementation.<br>
+            More than just an IT service provider, we serve as a comprehensive business partner<br>
+            for enterprises, organizations, and the public sector. Our mission is to catapult IT<br>
+            infrastructure into the future, utilizing our deep expertise to enhance operations and stimulate<br>
+            innovation.
+        </p>
+        <button>
+            <span>Read More <i class="fa-solid fa-arrow-right"></i></span>
+        </button>
+    </section>
+    
+
+
+    <!--Info Section -->
+    <section class="info-section">
+        <div class="info-item">
+            <i class="fa-brands fa-bandcamp"></i>
+            <p>Expert Integration <br>Partner</p>
+        </div>
+        <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Global Offices <br>Presence</p>
+        </div>
+        <div class="info-item">
+            <i class="fa-solid fa-gear"></i>
+            <p>25 Years of <br>Tech Experience</p>
+        </div>
+        <div class="info-item">
+            <i class="fa-solid fa-user-plus"></i>
+            <p>500+ Strong <br> Tech Team</p>
+        </div>
+        <div class="info-item">
+            <i class="fa-solid fa-earth-americas"></i>
+            <p>100+ Global <br>Clients  Served</p>
+        </div>
+    </section>
+    
+    <!--Card Section-->
+    <section class="cards-section">
+        <h2 class="digital-offerings">Our key digital offerings</h2>
+        <div class="card-container">
+            <a href="service1.html" class="card">
+                <h3>Cloud Engineering</h3>
+                <p>Tailored, scalable cloud solutions for future-ready businesses.</p>
+                <i class="fa-solid fa-cloud icon"></i> <!-- Cloud Icon -->
+            </a>
+    
+            <a href="service2.html" class="card">
+                <h3>Data, Analytics & AI</h3>
+                <p>Transforming data into actionable insights and intelligent outcomes.</p>
+                <i class="fa-solid fa-chart-bar icon"></i> <!-- Bars Icon -->
+            </a>
+    
+            <a href="service3.html" class="card">
+                <h3>Intelligent Automation</h3>
+                <p>Streamlining processes for efficiency and innovation.</p>
+                <i class="fa-solid fa-robot icon"></i> <!-- Robot Icon -->
+            </a>
+    
+            <a href="service4.html" class="card">
+                <h3>Service & UX Design</h3>
+                <p>Elevating UX with intuitive, impactful design.</p>
+                <i class="fa-solid fa-pencil-ruler icon"></i> <!-- Ruler Icon -->
+            </a>
+    
+            <a href="service5.html" class="card">
+                <h3>QA and Automation</h3>
+                <p>Ensuring excellence and efficiency with cutting-edge testing.</p>
+                <i class="fa-solid fa-check-square icon"></i> <!-- Check Icon -->
+            </a>
+    
+            <a href="service6.html" class="card">
+                <h3>Application Management</h3>
+                <p>Streamlining operations for seamless application performance.</p>
+                <i class="fa-solid fa-cogs icon"></i> <!-- Cogs Icon -->
+            </a>
+    
+            <a href="service7.html" class="card">
+                <h3>Enterprise Agility</h3>
+                <p>Accelerating innovation and responsiveness in a dynamic environment.</p>
+                <i class="fa-solid fa-signal icon"></i> <!-- Signal Icon -->
+            </a>
+    
+            <a href="service8.html" class="card explore-card">
+                <h3>Explore all Digital Transformation Services</h3>
+                <i class="fa-solid fa-arrow-right explore-icon"></i> <!-- Right Arrow Icon -->
+            </a>
+        </div>
+    </section>
+    
+    <!--Success Stories-->
+    <section class="success-stories">
+        <h2>The stories which speak our success</h2>
+        <p>Dive into real-world case studies showcasing our digital solutions’ impact: empowering businesses, revolutionizing operations, and enhancing user experiences.</p>
+        
+        <div class="service-images">
+            <div class="service-item">
+                <img src="case-1.png" alt="Banking customer migrates projects to applications">
+                <p>Banking customer migrates <br> projects to applications</p>
+            </div>
+            <div class="service-item">
+                <img src="case-2.png" alt="Agile and Modern Infrastructure">
+                <p>Agile and Modern Infrastructure</p>
+            </div>
+            <div class="service-item">
+                <img src="case-3.png" alt="Information Mastery">
+                <p>Information Mastery</p>
+            </div>
+        </div>
+    
+        <div class="about-section">
+            <button>
+                <span>Read More <i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+        </div>
+    </section>
+    
+    <!-- Skill Section -->
+<section class="skills">
+    <h2>Strength in Innovation: Leading Integration Solutions</h2>
+    <p>Leading IBM integration and global deployments,<br> advancing technology with industry partners.</p>
+
+    <div class="skills-container">
+        <div class="skill-item">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <h3>Advanced Deployment Capabilities</h3>
+            <p>Extensive experience in setting up and managing UAT, Production, and DR environments with a proven track record of handling complex deployments for global customers.</p>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-handshake"></i>
+            <h3>Strategic Partnerships and Proposals</h3>
+            <p>Strong collaboration with IBM Lab services and sales teams, leading to tailored service proposals and successful deployments on the OpenShift and CloudPak platforms.</p>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-certificate"></i>
+            <h3>Certified Expertise & In-House Innovations</h3>
+            <p>Home to highly certified integration leads, engineers, and managers, with in-house labs running IBM AppConnect on OpenShift for rigorous internal testing and development.</p>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-sync-alt"></i>
+            <h3>Migration and Continuous Improvement</h3>
+            <p>Skilled in migrating from IIB v9 to ACE v11 and adept at refining DevOps strategies and CI/CD tools to enhance performance and adapt to evolving business needs.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="expertise">
+    <h2>Expertise across industries & borders</h2>
+    <div class="grid-container">
+        <div class="gridImage-div">
+            <img src="bank.jpg" alt="Bank Image">
+            <div class="overlay">
+                <span class="text">Banking</span>
+                <div class="green-line"></div>
+            </div>
+        </div>
+        <div class="gridImage-div">
+            <img src="HealthCare.jpg" alt="HealthCare Image">
+            <div class="overlay">
+                <span class="text">Healthcare</span>
+                <div class="green-line"></div>
+            </div>
+        </div>
+        <div class="gridImage-div">
+            <img src="Education.jpg" alt="Education Image">
+            <div class="overlay">
+                <span class="text">Education</span>
+                <div class="green-line"></div>
+            </div>
+        </div>
+        <div class="gridImage-div">
+            <img src="Manufacturing.jpg" alt="Manufacturing Image">
+            <div class="overlay">
+                <span class="text">Manufacturing</span>
+                <div class="green-line"></div>
+            </div>
+        </div>
+        <div class="gridImage-div">
+            <img src="Government.png" alt="Government Image">
+            <div class="overlay">
+                <span class="text">Government</span>
+                <div class="green-line"></div>
+            </div>
+        </div>
+    </div>
+    <p>Our team boasts extensive, in-depth expertise <br> across various industries, enabling tailored
+         <br>and effective solutions for each sector.</p>
+         <h2>100+ <br>
+            Global Success Stories & growing</h2>
+            <img src="Photo.png" alt="">
+</section>
+
+
+<footer>
+    <div class="div1">
+       <div class="logo1">
+        <img src="eidiko-logo.svg" alt="">
+       </div>
+       <div class="footer-columns">
+        <div>
+            <h3>Digital Services</h3>
+            <ul>
+                <li><a href="">Cloud Engineering</a></li>
+                <li><a href="">Data, Analytics & AI</a></li>
+                <li><a href="">Intelligent Automation</a></li>
+                <li><a href="">QA and Automation</a></li>
+                <li><a href="">Service & UX Design</a></li>
+                <li><a href="">Enterprise Agility</a></li>
+                <li><a href="">Application Management</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Industries</h3>
+            <ul>
+                <li><a href="">Banking & Finance</a></li>
+                <li><a href="">Healthcare</a></li>
+                <li><a href="">Government</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Manufacturing</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Company</h3>
+            <ul>
+                <li><a href=""><a href="">Clients</a></a></li>
+                <li><a href=""></a><a href="">Careers</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Social</h3>
+            <ul>
+                <li><a href="">LinkedIn</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Facebook</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="div2">
+        <h2>Let's Talk</h2>
+        <div class="mail">
+            <i class="fa-solid fa-envelope"></i>
+            <span>sales@eidiko.com</span>
+        </div>
+       <div class="call">
+        <i class="fa-solid fa-phone"></i>
+        <span>543654131302</span>
+       </div>
+       <p>Copyright © 2024 XYZ. All rights reserved</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
